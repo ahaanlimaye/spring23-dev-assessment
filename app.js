@@ -1,11 +1,15 @@
-import express from 'express';
-import dotenv from 'dotenv';
-import cors from 'cors';
+const express = require('express');
+const cors = require('cors');
+require('dotenv').config();
 
-dotenv.config();
 const app = express();
-const APP_PORT = 5000;
+const APP_PORT = process.env.PORT || 8000;
 app.use(cors({ origin: true }));
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+const routes = require('./server/routes/apiRoutes');
+app.use('/', routes);
 
 app.get('/', (req, res) => {
     res.json({"Hello": "World",

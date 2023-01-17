@@ -11,9 +11,7 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
 ## API Endpoints (all endpoints with (*) tag require a JSON Web Token in authorizaton header)
 - `GET http://localhost:8000/api/health`: test whether API server is functioning and healthy
 - `POST http://localhost:8000/api/user`: create a user in the database based on information passed into the body
-  -  Sample body: `
-    { "hi" }
-  `
+  -  Sample body: `{ "firstName": "John", "lastName": "Smith", "email": "johnsmith@gmail.com", "password": "1234" }
 - `POST http://localhost:8000/api/animal`(*): create an animal in the database based on information passed into the body
 - `POST http://localhost:8000/api/training`(*): create a training log in the database based on information passed into the body
 - `GET http://localhost:8000/api/admin/users`(*): returns all of the users in the database (not with their passwords)

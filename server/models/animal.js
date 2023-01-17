@@ -1,5 +1,7 @@
+// dependency
 const mongoose = require('mongoose');
 
+// defines structuere of animal in database
 const animalSchema = new mongoose.Schema({
   name: {
     type: String,
@@ -23,4 +25,5 @@ const animalSchema = new mongoose.Schema({
   }
 });
 
+// exports animal model to be used
 module.exports = mongoose.model('Animal', animalSchema);

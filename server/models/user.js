@@ -1,5 +1,7 @@
+// dependency
 const mongoose = require('mongoose');
 
+// defines structure of user in database
 const userSchema = new mongoose.Schema({
   firstName: {
     type: String,
@@ -23,4 +25,5 @@ const userSchema = new mongoose.Schema({
   }
 });
 
+// exports user model to be used
 module.exports = mongoose.model('User', userSchema);

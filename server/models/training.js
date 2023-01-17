@@ -1,5 +1,7 @@
+// dependency
 const mongoose = require('mongoose');
 
+// defines structure of training log in database
 const trainingSchema = new mongoose.Schema({
   date: {
     type: Date,
@@ -27,4 +29,5 @@ const trainingSchema = new mongoose.Schema({
   }
 });
 
+// exports training log model to be used
 module.exports = mongoose.model('Training', trainingSchema);

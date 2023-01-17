@@ -5,7 +5,7 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
 - Install NodeJS
 - Clone the respository: `https://github.com/ahaanlimaye/spring23-dev-assessment`
 - Install the dependencies: `npm install`
-- Create `.env` file with following content: `DATABASE_URI="mongodb+srv://admin:9ozKBIMBHBFo71Wd@cluster0.3bzdczx.mongodb.net/AnimalTrainingManagement?retryWrites=true&w=majority"
+- Create `.env` file with the following content: `DATABASE_URI="mongodb+srv://admin:9ozKBIMBHBFo71Wd@cluster0.3bzdczx.mongodb.net/AnimalTrainingManagement?retryWrites=true&w=majority"
 JWT_STRING="174015e35f9cb38e63e6524f0e32dc1aaadb3a918d68268cde06d6d2812c041fa5c4b8913221c8e7867e4feb03701608d8874ca9882db678293f379417f23059"`
 - Start the HTTP server: `npm run start`
 - Navigate to `http://localhost:8000/api/health`

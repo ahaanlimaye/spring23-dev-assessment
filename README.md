@@ -19,7 +19,7 @@ JWT_STRING="174015e35f9cb38e63e6524f0e32dc1aaadb3a918d68268cde06d6d2812c041fa5c4
 - sample body:  `{ "firstName": "John", "lastName": "Smith", "email": "johnsmith@gmail.com", "password": "1234" }`
 
 `POST http://localhost:8000/api/animal`(*): create an animal in the database based on information passed into the body
-- sample body: `{ "name": "Doggy", "hoursTrained": 10, "datOfBirth": "03/14/15" }`
+- sample body: `{ "name": "Doggy", "hoursTrained": 10, "dateOfBirth": "03/14/15" }`
 
 `POST http://localhost:8000/api/training`(*): create a training log in the database based on information passed into the body
 - sample body: `{ "date": "08/05/22", "description": "played catch", "hours": 4, "animal": "63c5d9e17f3aa9d21765b018" }`

@@ -10,6 +10,7 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
 
 ## API Endpoints (all endpoints with (*) tag require a JSON Web Token in authorizaton header)
 - `GET http://localhost:8000/api/health`: test whether API server is functioning and healthy
+
 - `POST http://localhost:8000/api/user`: create a user in the database based on information passed into the body
   - sample body: `{ "firstName": "John", "lastName": "Smith", "email": "johnsmith@gmail.com", "password": "1234" }`
 
@@ -21,9 +22,15 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
 
 - `GET http://localhost:8000/api/admin/users`(*): returns all of the users in the database (not with their passwords)
   - includes params `limit` and `page` for pagination, eg. `?limit=2&page=3`
+
 - `GET http://localhost:8000/api/admin/animals`(*): returns all of the animals in the database
   - includes params `limit` and `page` for pagination, eg. `?limit=2&page=3`
+
 - `GET http://localhost:8000/api/admin/training`(*): returns all of the training logs in the database
   - includes params `limit` and `page` for pagination, eg. `?limit=2&page=3`
+
 - `POST http://localhost:8000/api/user/login`: accepts an email and password and tests whether the password is valid for the given email
+  - sample body: `{ "email": "johnsmith@gmail.com", "password": "1234" }`
+
 - `POST http://localhost:8000/api/user/verify`: issues a JSON Web Token to the user if they issue the correct email/password combination
+  - sample body: `{ "email": "johnsmith@gmail.com", "password": "1234" }`

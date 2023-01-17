@@ -3,7 +3,7 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
 
 ## Setup
 - Install NodeJS
-- Clone the respository: `https://github.com/ahaanlimaye/spring23-dev-assessment`
+- Clone the respository: `git clone https://github.com/ahaanlimaye/spring23-dev-assessment.git`
 - Install the dependencies: `npm install`
 - Create `.env` file with the following content:
 `DATABASE_URI="mongodb+srv://admin:9ozKBIMBHBFo71Wd@cluster0.3bzdczx.mongodb.net/AnimalTrainingManagement?retryWrites=true&w=majority"

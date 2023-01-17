@@ -14,6 +14,8 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
   -  sample body: `{ "firstName": "John", "lastName": "Smith", "email": "johnsmith@gmail.com", "password": "1234" }`
 
 - `POST http://localhost:8000/api/animal`(*): create an animal in the database based on information passed into the body
+  -  sample body: `{ "name": "Doggy", "hoursTrained": 10, "datOfBirth": "03/14/15" }`
+
 - `POST http://localhost:8000/api/training`(*): create a training log in the database based on information passed into the body
 - `GET http://localhost:8000/api/admin/users`(*): returns all of the users in the database (not with their passwords)
 - `GET http://localhost:8000/api/admin/animals`(*): returns all of the animals in the database

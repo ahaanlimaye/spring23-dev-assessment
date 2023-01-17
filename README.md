@@ -12,11 +12,7 @@ Hi! My name is Ahaan Limaye, and I'm a first-year CS student at Georgia Tech. He
 `GET http://localhost:8000/api/health`: test whether API server is functioning and healthy
 
 `POST http://localhost:8000/api/user`: create a user in the database based on information passed into the body
-- sample body: ```{ 
-"firstName": "John", "lastName": "Smith", 
-  "email": "johnsmith@gmail.com", 
-  "password": "1234" 
-}```
+- sample body: `{ "firstName": "John", "lastName": "Smith", "email": "johnsmith@gmail.com", "password": "1234" }`
 
 `POST http://localhost:8000/api/animal`(*): create an animal in the database based on information passed into the body
 - sample body: `{ "name": "Doggy", "hoursTrained": 10, "datOfBirth": "03/14/15" }`

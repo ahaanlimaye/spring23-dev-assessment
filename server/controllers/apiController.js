@@ -76,7 +76,7 @@ exports.addTraining = async (req, res) => {
 
     // checks if inputted user owns the inputted animal
     const animal = await Animal.findById(req.body.animal);
-    if (animal.owner !== req.body.user) 
+    if (animal.owner !== req.id.user._id) 
       throw new ValidationError(`Animal ${req.body.animal} is not owned by User ${req.body.user}`);
 
     // saves new training log to database
